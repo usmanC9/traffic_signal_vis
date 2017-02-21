@@ -1,6 +1,6 @@
 define(function (require) {
 
-  var module = require('ui/modules').get('kibana/traffic_sg', ['kibana']);
+  var module = require('ui/modules').get('kibana/traffic_signal_vis', ['kibana']);
 
   module.controller('KbnTrafficVisController', function ($scope, Private) {
     var tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
