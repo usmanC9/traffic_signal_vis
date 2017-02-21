@@ -1,5 +1,8 @@
 {
-  "name": "traffic_signal_vis",
-  "version": "5.1.1",
-  "main": "index.js"
+    "name": "traffic_signal_vis",
+    "version": "0.3.4",
+    "kibana": {
+      "version": "{VERSION}"
+    },
+    "main": "index.js"
 }
