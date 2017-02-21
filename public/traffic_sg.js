@@ -1,10 +1,10 @@
 define(function (require) {
   
   // we need to load the css ourselves
-  require('plugins/traffic_sg/traffic_sg.less');
+  require('plugins/traffic_signal_vis/traffic_sg.less');
 
   // we also need to load the controller and used by the template
-  require('plugins/traffic_sg/traffic_sg_controller');
+  require('plugins/traffic_signal_vis/traffic_sg_controller');
 
   // register the provider with the visTypes registry
   require('ui/registry/vis_types').register(MetricVisProvider);
@@ -20,7 +20,7 @@ define(function (require) {
       title: 'Traffic',
       description: 'Chart display lights of a standard color green/yellow/red',
       icon: 'fa-thumbs-up',
-      template: require('plugins/traffic_sg/traffic_sg.html'),
+      template: require('plugins/traffic_signal_vis/traffic_sg.html'),
       params: {
         defaults: {
           titleTraffic: null,
@@ -30,7 +30,7 @@ define(function (require) {
           greenThreshold: 80,
           invertScale: null
         },
-        editor: require('plugins/traffic_sg/traffic_sg_params.html')
+        editor: require('plugins/traffic_signal_vis/traffic_sg_params.html')
       },
       schemas: new Schemas([
         {
